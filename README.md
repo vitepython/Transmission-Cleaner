@@ -14,9 +14,9 @@ Installation:
 
 Configuration:
 Before running the script, make sure to configure the Transmission RPC connection:
-1. Rename transmission-cleaner.conf.example to transmission-cleaner.conf.
-2. Open transmission-cleaner.conf in a text editor.
-3. Enter your Transmission username, password, and RPC URL.
+1. On first run it will attempt to create a transmission-cleaner.conf
+2. Enter your Transmission username, password, and RPC URL.
+3. If creating transmission-cleaner.conf fails, then transmission-cleaner.conf in a text editor.
 
 Usage:
 Run the script using the following command:
