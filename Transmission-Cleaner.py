@@ -34,11 +34,14 @@ def create_config():
     return config
 
 def main():
+    create_config_option = input("Do you want to create a configuration file? (y/n): ")
+    if create_config_option.lower() == "y":
+        create_config()
+
     config = read_config()
     if config is None:
-        config = create_config()
-
-    username, password, url = config
+        print("No valid configuration found. try running and editing Transmission-Cleaner-No-Config.py")
+        return
 
     # Set the headers for authentication and session ID
     headers = {
